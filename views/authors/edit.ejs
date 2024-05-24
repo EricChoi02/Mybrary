@@ -1,0 +1,8 @@
+<h2 class="page-header">Edit Author</h2>
+<form action="/authors/<%= author.id %>?_method=PUT" method="POST">
+    <%- include('_form_fields.ejs') %>
+    <div class="form-row form-row-end btn-row">
+        <a href="/authors/<%=author.id %>" class="btn btn-danger">Cancel</a>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+</form>
