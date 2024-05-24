@@ -1,5 +1,6 @@
-<h2>Recently Add</h2>
-<div>
+<% bookCoverClass = locals.large ? 'book-cover-large' : '' %>
+<% bookGridClass = locals.large ? 'book-grid-large' : '' %>
+<div class="book-grid <%= bookGridClass %>">
     <% for (let i = 0; i < books.length; i++) {%>
         <a href="/books/<%= books[i].id %>">
             <img height="150" width="100" src="<%= books[i].coverImagePath %>"
